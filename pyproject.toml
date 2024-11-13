@@ -1,0 +1,13 @@
+[project]
+name = "wd-ai-hackathon"
+version = "0.1.0"
+description = "white duck AI hackathon"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "notebook>=7.2.2",
+    "ruff>=0.7.3",
+    "semantic-kernel>=1.14.0",
+]
