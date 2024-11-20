@@ -9,5 +9,6 @@ dependencies = [
     "jupyter>=1.1.1",
     "notebook>=7.2.2",
     "ruff>=0.7.3",
+    "scipy>=1.14.1",
     "semantic-kernel>=1.14.0",
 ]
