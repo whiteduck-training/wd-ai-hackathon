@@ -13,7 +13,5 @@ dependencies = [
     "pydantic==2.9.2",
     "semantic-kernel>=1.14.0",
     "websearch-python>=1.2.2",
-    "arxiv>=2.1.3",
-    "pymgclient>=1.3.1",
-    "gqlalchemy>=1.6.0",
+    "arxiv>=2.1.3"
 ]
