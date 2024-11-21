@@ -13,5 +13,70 @@ dependencies = [
     "pydantic==2.9.2",
     "semantic-kernel>=1.14.0",
     "websearch-python>=1.2.2",
-    "arxiv>=2.1.3"
+    "arxiv>=2.1.3",
+    "schwarm>=0.1.4",
+    "faker>=33.0.0",
+    "tinydb>=4.8.2",
 ]
+
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/schwarm"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pyright]
+include = ["."]
+exclude = [
+    "**/.venv",
+    "**/dump",          # exclude virtual environment - exclude means that it will not be scanned
+    "**/settings.json",
+]
+useLibraryCodeForTypes = true
+ignore = [
+    "**/settings.json",
+] # ignore means that it will be scanned but not checked
+defineConstant = { DEBUG = true }
+reportMissingImports = "warning"
+reportMissingTypeStubs = false
+typeCheckingMode = "basic"
+
+
+[tool.ruff]
+cache-dir = ".cache/ruff"
+line-length = 120
+## formatting
+format.quote-style = "double"
+format.indent-style = "space"
+format.skip-magic-trailing-comma = false
+format.line-ending = "auto"
+format.docstring-code-format = true
+format.docstring-code-line-length = "dynamic"
+## linting
+lint.select = [
+    'D',   #pydocstyle
+    'E',
+    'W',   # pycodestyle
+    'F',   #pyflakes
+    'I',   # sort imports
+    'UP',  #pyupgrade
+    "RUF", # ruff dev's own rules
+    "SIM", # pyflakes simplicity
+    "C90", # more complexity rules
+]
+lint.ignore = ["E203", "E266", "E501", "F541", "D417"]
+lint.exclude = ["logs/", "data/", "tests/", "docs/", "dump/"]
+lint.pydocstyle.convention = "google"
+lint.isort.combine-as-imports = true
+exclude = ["logs/", "data/", "tests/", "docs/", "src/templates/", "dump/"]
+
+[tool.pytest.ini_options]
+addopts = "--cov src/schwarm --cov-report html -v"
+minversion = "6.0"
+python_files = "test_*.py"
+python_classes = "Test"
+python_functions = "test"
+verbosity_test_cases = 2
