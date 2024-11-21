@@ -1,6 +1,6 @@
 {
     "name": "Python Jupyter",
-    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "image": "ghcr.io/astral-sh/uv:python3.12-bookworm",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -28,5 +28,5 @@
     },
 
     "forwardPorts": [8888],
-    "postCreateCommand": "chmod +x .devcontainer/setup.sh && .devcontainer/setup.sh"
+    "postCreateCommand": "uv sync"
 }
