@@ -7,7 +7,8 @@ When running as devcontainer or codespace everything should be set up already.
 When running locally `uv`needs to be installed:
 
 ```
-https://github.com/astral-sh/uv/releases
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/astral-sh/uv/releases/download/0.5.4/uv-installer.sh | sh
+
 ```
 
 after installation run 
