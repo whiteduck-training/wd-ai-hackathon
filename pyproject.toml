@@ -10,5 +10,6 @@ dependencies = [
     "notebook>=7.2.2",
     "ruff>=0.7.3",
     "scipy>=1.14.1",
+    "pydantic==2.9.2",
     "semantic-kernel>=1.14.0",
 ]
