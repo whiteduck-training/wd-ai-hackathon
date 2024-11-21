@@ -123,13 +123,6 @@ This repository contains a series of Jupyter notebooks that guide you through bu
   - Troubleshooting Assistant
   - Content Recommendation System
 
-### Getting Started
-
-1. Clone this repository
-2. Install the required dependencies
-3. Set up your OpenAI/Azure OpenAI credentials
-4. Start with `00_hello_world.ipynb` and progress through the modules sequentially
-
 ### Learning Path
 
 The notebooks are designed to be completed in order, as each module builds upon concepts introduced in previous modules. The progression goes from basic Semantic Kernel concepts to advanced multi-agent systems and process management, culminating in a comprehensive capstone project.
