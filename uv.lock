@@ -6,23 +6,6 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "adlfs"
-version = "2023.12.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "aiohttp" },
-    { name = "azure-core" },
-    { name = "azure-datalake-store" },
-    { name = "azure-identity" },
-    { name = "azure-storage-blob" },
-    { name = "fsspec" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/56/50/91e53e992040026ddd747698564669865718c1ab21b7bfce4791c0fb7b12/adlfs-2023.12.0.tar.gz", hash = "sha256:a590694ed9f5a45741e82bff8bcf88c30a790da949310817330b5e7992b8a9e9", size = 46038 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/04/b7/f1c74c521909ee6006d33e8b882eee14b93ceaf0ab2093c3352de974a6da/adlfs-2023.12.0-py3-none-any.whl", hash = "sha256:da6e391afd002c7bb1b75dcc286b78fdf5dbf29aca0f984462033df6311b4e7e", size = 38354 },
-]
-
-[[package]]
 name = "aiohappyeyeballs"
 version = "2.4.3"
 source = { registry = "https://pypi.org/simple" }
@@ -225,20 +208,6 @@ wheels = [
 ]
 
 [[package]]
-name = "azure-datalake-store"
-version = "0.0.53"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "cffi" },
-    { name = "msal" },
-    { name = "requests" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/22/ff/61369d06422b5ac48067215ff404841342651b14a89b46c8d8e1507c8f17/azure-datalake-store-0.0.53.tar.gz", hash = "sha256:05b6de62ee3f2a0a6e6941e6933b792b800c3e7f6ffce2fc324bc19875757393", size = 71430 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/88/2a/75f56b14f115189155cf12e46b366ad1fe3357af5a1a7c09f7446662d617/azure_datalake_store-0.0.53-py2.py3-none-any.whl", hash = "sha256:a30c902a6e360aa47d7f69f086b426729784e71c536f330b691647a51dc42b2b", size = 55308 },
-]
-
-[[package]]
 name = "azure-identity"
 version = "1.19.0"
 source = { registry = "https://pypi.org/simple" }
@@ -252,21 +221,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/aa/91/cbaeff9eb0b838f0d35b4607ac1c6195c735c8eb17db235f8f60e622934c/azure_identity-1.19.0.tar.gz", hash = "sha256:500144dc18197d7019b81501165d4fa92225f03778f17d7ca8a2a180129a9c83", size = 263058 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f0/d5/3995ed12f941f4a41a273d9b1709282e825ef87ed8eab3833038fee54d59/azure_identity-1.19.0-py3-none-any.whl", hash = "sha256:e3f6558c181692d7509f09de10cca527c7dce426776454fb97df512a46527e81", size = 187587 },
-]
-
-[[package]]
-name = "azure-storage-blob"
-version = "12.24.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "azure-core" },
-    { name = "cryptography" },
-    { name = "isodate" },
-    { name = "typing-extensions" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/fe/f6/5a94fa935933c8483bf27af0140e09640bd4ee5b2f346e71eee06c197482/azure_storage_blob-12.24.0.tar.gz", hash = "sha256:eaaaa1507c8c363d6e1d1342bd549938fdf1adec9b1ada8658c8f5bf3aea844e", size = 569613 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/e2/f8/ef0f76f8c424bedd20c685409836ddfb42ac76fd8a0f21c3c3659cf7207d/azure_storage_blob-12.24.0-py3-none-any.whl", hash = "sha256:4f0bb4592ea79a2d986063696514c781c9e62be240f09f6397986e01755bc071", size = 408579 },
 ]
 
 [[package]]
@@ -476,14 +430,6 @@ wheels = [
 ]
 
 [[package]]
-name = "dacite"
-version = "1.8.1"
-source = { registry = "https://pypi.org/simple" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/21/0f/cf0943f4f55f0fbc7c6bd60caf1343061dff818b02af5a0d444e473bb78d/dacite-1.8.1-py3-none-any.whl", hash = "sha256:cc31ad6fdea1f49962ea42db9421772afe01ac5442380d9a99fcf3d188c61afe", size = 14309 },
-]
-
-[[package]]
 name = "debugpy"
 version = "1.8.8"
 source = { registry = "https://pypi.org/simple" }
@@ -646,15 +592,6 @@ wheels = [
 ]
 
 [[package]]
-name = "fsspec"
-version = "2024.10.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/a0/52/f16a068ebadae42526484c31f4398e62962504e5724a8ba5dc3409483df2/fsspec-2024.10.0.tar.gz", hash = "sha256:eda2d8a4116d4f2429db8550f2457da57279247dd930bb12f821b58391359493", size = 286853 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/c6/b2/454d6e7f0158951d8a78c2e1eb4f69ae81beb8dca5fee9809c6c99e9d0d0/fsspec-2024.10.0-py3-none-any.whl", hash = "sha256:03b9a6785766a4de40368b88906366755e2819e758b83705c88cd7cb5fe81871", size = 179641 },
-]
-
-[[package]]
 name = "gevent"
 version = "24.11.1"
 source = { registry = "https://pypi.org/simple" }
@@ -682,25 +619,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/ed/6e/b2eed8dec617264f0046d50a13a42d3f0a06c50071b9fc1eae00285a03f1/gevent-24.11.1-cp313-cp313-musllinux_1_1_aarch64.whl", hash = "sha256:58851f23c4bdb70390f10fc020c973ffcf409eb1664086792c8b1e20f25eef43", size = 5449436 },
     { url = "https://files.pythonhosted.org/packages/63/c2/eca6b95fbf9af287fa91c327494e4b74a8d5bfa0156cd87b233f63f118dc/gevent-24.11.1-cp313-cp313-musllinux_1_1_x86_64.whl", hash = "sha256:1ea50009ecb7f1327347c37e9eb6561bdbc7de290769ee1404107b9a9cba7cf1", size = 6866470 },
     { url = "https://files.pythonhosted.org/packages/b7/e6/51824bd1f2c1ce70aa01495aa6ffe04ab789fa819fa7e6f0ad2388fb03c6/gevent-24.11.1-cp313-cp313-win_amd64.whl", hash = "sha256:ec68e270543ecd532c4c1d70fca020f90aa5486ad49c4f3b8b2e64a66f5c9274", size = 1540088 },
-]
-
-[[package]]
-name = "gqlalchemy"
-version = "1.6.0"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "adlfs" },
-    { name = "dacite" },
-    { name = "neo4j" },
-    { name = "networkx" },
-    { name = "numpy" },
-    { name = "psutil" },
-    { name = "pydantic" },
-    { name = "pymgclient" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/5a/97/89305d0408afe3751b7e5663d6d5b7ca9d9c23e0d4114fe799050e982248/gqlalchemy-1.6.0.tar.gz", hash = "sha256:846a8f17d35133d7ece013933f48fdb49ed8bb9a601de4651a6c09f16bad57b2", size = 69534 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/2a/8a/bf93be2f20776c7faf14052f5635cf990606edb75894572ebe25d102ee20/gqlalchemy-1.6.0-py3-none-any.whl", hash = "sha256:5473357dbfd9a760e7ab2dd66a73ccdc73b0b84f0128b855ad613dfe6864aeaf", size = 94117 },
 ]
 
 [[package]]
@@ -1419,30 +1337,12 @@ wheels = [
 ]
 
 [[package]]
-name = "neo4j"
-version = "4.4.12"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "pytz" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/e1/0a/dc751091901fc4d98be6523562a48e15d6c0ccca89891d975d7825f2b103/neo4j-4.4.12.tar.gz", hash = "sha256:b138271400e1ef2b89738e90ae0beb96b005f7dfedd68b17c4b85ee732d54125", size = 88935 }
-
-[[package]]
 name = "nest-asyncio"
 version = "1.6.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/83/f8/51569ac65d696c8ecbee95938f89d4abf00f47d58d48f6fbabfe8f0baefe/nest_asyncio-1.6.0.tar.gz", hash = "sha256:6f172d5449aca15afd6c646851f4e31e02c598d553a667e38cafa997cfec55fe", size = 7418 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/a0/c4/c2971a3ba4c6103a3d10c4b0f24f461ddc027f0f09763220cf35ca1401b3/nest_asyncio-1.6.0-py3-none-any.whl", hash = "sha256:87af6efd6b5e897c81050477ef65c62e2b2f35d51703cae01aff2905b1852e1c", size = 5195 },
-]
-
-[[package]]
-name = "networkx"
-version = "2.8.8"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/cd/16/c44e8550012735b8f21b3df7f39e8ba5a987fb764ac017ad5f3589735889/networkx-2.8.8.tar.gz", hash = "sha256:230d388117af870fce5647a3c52401fcf753e94720e6ea6b4197a5355648885e", size = 1960828 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/42/31/d2f89f1ae42718f8c8a9e440ebe38d7d5fe1e0d9eb9178ce779e365b3ab0/networkx-2.8.8-py3-none-any.whl", hash = "sha256:e435dfa75b1d7195c7b8378c3859f0445cd88c6b0375c181ed66823a9ceb7524", size = 2025192 },
 ]
 
 [[package]]
@@ -1903,12 +1803,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/ce/af/409edba35fc597f1e386e3860303791ab5a28d6cc9a8aecbc567051b19a9/PyMeta3-0.5.1.tar.gz", hash = "sha256:18bda326d9a9bbf587bfc0ee0bc96864964d78b067288bcf55d4d98681d05bcb", size = 29566 }
 
 [[package]]
-name = "pymgclient"
-version = "1.3.1"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/c5/74/70b392878d0777303107085a4f3854525b7e37c506a0b42550f6ea571ad1/pymgclient-1.3.1.tar.gz", hash = "sha256:a409ee9c7ac714a96a86f9eeca9e71f19f36f11390b3fdbac447d65462e05037", size = 125563 }
-
-[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -1936,15 +1830,6 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/4f/da/95963cebfc578dabd323d7263958dfb68898617912bb09327dd30e9c8d13/python-json-logger-2.0.7.tar.gz", hash = "sha256:23e7ec02d34237c5aa1e29a070193a4ea87583bb4e7f8fd06d3de8264c4b2e1c", size = 10508 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/35/a6/145655273568ee78a581e734cf35beb9e33a370b29c5d3c8fee3744de29f/python_json_logger-2.0.7-py3-none-any.whl", hash = "sha256:f380b826a991ebbe3de4d897aeec42760035ac760345e57b812938dc8b35e2bd", size = 8067 },
-]
-
-[[package]]
-name = "pytz"
-version = "2024.2"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3a/31/3c70bf7603cc2dca0f19bdc53b4537a797747a58875b552c8c413d963a3f/pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a", size = 319692 }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/11/c3/005fcca25ce078d2cc29fd559379817424e94885510568bc1bc53d7d5846/pytz-2024.2-py2.py3-none-any.whl", hash = "sha256:31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725", size = 508002 },
 ]
 
 [[package]]
@@ -2418,12 +2303,10 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "arxiv" },
-    { name = "gqlalchemy" },
     { name = "ipykernel" },
     { name = "jupyter" },
     { name = "notebook" },
     { name = "pydantic" },
-    { name = "pymgclient" },
     { name = "ruff" },
     { name = "scipy" },
     { name = "semantic-kernel" },
@@ -2433,12 +2316,10 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "arxiv", specifier = ">=2.1.3" },
-    { name = "gqlalchemy", specifier = ">=1.6.0" },
     { name = "ipykernel", specifier = ">=6.29.5" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "notebook", specifier = ">=7.2.2" },
     { name = "pydantic", specifier = "==2.9.2" },
-    { name = "pymgclient", specifier = ">=1.3.1" },
     { name = "ruff", specifier = ">=0.7.3" },
     { name = "scipy", specifier = ">=1.14.1" },
     { name = "semantic-kernel", specifier = ">=1.14.0" },
