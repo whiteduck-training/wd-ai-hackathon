@@ -8,7 +8,9 @@
                 "ms-toolsai.jupyter",
                 "ms-toolsai.jupyter-renderers",
                 "ms-toolsai.jupyter-keymap",
-                "charliermarsh.ruff"
+                "charliermarsh.ruff",
+                "GitHub.copilot",
+                "GitHub.copilot-chat"
             ],
             "settings": {
                 "python.defaultInterpreterPath": "/usr/local/bin/python",
