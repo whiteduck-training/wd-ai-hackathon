@@ -24,6 +24,9 @@ Also following vscode extensions are needed:
 "ms-toolsai.jupyter"
 "ms-toolsai.jupyter-renderers"
 "ms-toolsai.jupyter-keymap"
+"charliermarsh.ruff"
+"GitHub.copilo"
+"GitHub.copilo-chat"
 ```
 
 ## Sanity check
