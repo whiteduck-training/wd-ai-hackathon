@@ -1,5 +1,27 @@
 # wd-ai-hackathon
 
+## Run locally
+
+To run the notebooks locally, you need to have a docker runtime installed on your machine. You can install docker from [here](https://docs.docker.com/get-docker/).
+
+After installing, you can run this repository as a devcontainer by following the steps below:
+
+1. Clone this repository to your local machine.
+2. Open the repository in Visual Studio Code.
+3. Open the command palette by pressing `Ctrl+Shift+P` or `Cmd+Shift+P` and search for `Remote-Containers: Reopen in Container`.
+
+Finally, you need to rename the .env_template file and replace the values with the following
+
+```sh
+AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o-mini"
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT_NAME="text-embedding-3-large"
+AZURE_OPENAI_ENDPOINT="https://models.inference.ai.azure.com"
+AZURE_OPENAI_API_KEY="<YOUR API KEY>"
+```
+
+You can get the API key by creating a GitHub Personal Access Token. See [here](https://github.com/settings/tokens).
+
+
 ## Installation
 
 When running as devcontainer or codespace everything should be set up already.
