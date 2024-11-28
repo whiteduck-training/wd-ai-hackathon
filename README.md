@@ -10,7 +10,7 @@ After installing, you can run this repository as a devcontainer by following the
 2. Open the repository in Visual Studio Code.
 3. Open the command palette by pressing `Ctrl+Shift+P` or `Cmd+Shift+P` and search for `Remote-Containers: Reopen in Container`.
 
-Finally, you need to rename the .env_template file and replace the values with the following
+Finally, you need to rename the .env_template file to .env and replace the values with the following
 
 ```sh
 AZURE_OPENAI_CHAT_DEPLOYMENT_NAME="gpt-4o-mini"
